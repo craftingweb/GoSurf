@@ -419,6 +419,14 @@ template {
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+}
+
+li,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -460,6 +468,57 @@ a {
   background-size: cover;
   position: relative;
 }
+.header__title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  color: #fff;
+  max-width: 467px;
+  font-family: "Fira Sans";
+  font-size: 200px;
+  font-weight: 800;
+  line-height: 156px;
+  text-transform: uppercase;
+  opacity: 0.07;
+}
+.header__aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1450980392);
+  height: 100vh;
+  text-align: center;
+}
+.header__date {
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 64px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.header__date span {
+  display: block;
+  font-weight: 300;
+  line-height: 19px;
+  font-size: 16px;
+  letter-spacing: 1.4px;
+}
+
+.menu {
+  margin-top: 20px;
+}
+.menu span {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 3px;
+  padding-top: 6px;
+  margin-bottom: 25px;
+}
 
 .slider-item__info {
   position: absolute;
@@ -497,4 +556,45 @@ a {
 .slider-arrows-left {
   z-index: 2;
   right: 125px;
+}
+
+.slider-dots {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  max-width: 920px;
+  width: 100%;
+  color: white;
+}
+
+.dots-box {
+  border-top: 4px solid #fff;
+  padding-top: 10px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dots-box__number {
+  font-family: "Fira Sans";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.dots-box__name {
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
+.slick-current .dots-box {
+  border-top-color: #4af6cd;
 }
