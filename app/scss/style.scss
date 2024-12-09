@@ -1,9 +1,59 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 
+.header {
+  position: relative;
+  height: 100vh;
+  &__slider {
+    &-item {
+      height: 100vh;
+      background-image: url("/img/header-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  }
+}
 
+.slider-item__info {
+  position: absolute;
+  right: 80px;
+  bottom: 116px;
+  text-align: right;
+  color: #fff;
+  text-transform: uppercase;
+  &-subtitle {
+    margin-bottom: 5px;
+  }
+  &-subtext {
+    margin-bottom: 8px;
+  }
+  &-title {
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 86px;
+    margin-bottom: 48px;
+  }
+  &-text {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46px;
+    margin-bottom: 20px;
+  }
+}
 
-
+.slider-arrows {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+  &-left {
+    z-index: 2;
+    right: 125px;
+  }
+}
 
 @import "media";

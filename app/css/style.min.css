@@ -415,3 +415,86 @@ template {
 .slick-arrow.slick-hidden {
   display: none;
 }
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle-left {
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.333px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  position: relative;
+  padding-left: 100px;
+}
+.subtitle-left::before {
+  content: "";
+  top: 50%;
+  position: absolute;
+  width: 80px;
+  left: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+.header__slider-item {
+  height: 100vh;
+  background-image: url("/img/header-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.slider-item__info {
+  position: absolute;
+  right: 80px;
+  bottom: 116px;
+  text-align: right;
+  color: #fff;
+  text-transform: uppercase;
+}
+.slider-item__info-subtitle {
+  margin-bottom: 5px;
+}
+.slider-item__info-subtext {
+  margin-bottom: 8px;
+}
+.slider-item__info-title {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 86px;
+  margin-bottom: 48px;
+}
+.slider-item__info-text {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+
+.slider-arrows {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  cursor: pointer;
+}
+.slider-arrows-left {
+  z-index: 2;
+  right: 125px;
+}
