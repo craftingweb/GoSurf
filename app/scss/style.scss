@@ -1,5 +1,5 @@
-@import "vars";
 @import "libs";
+@import "vars";
 @import "fonts";
 @import "global";
 
@@ -97,6 +97,7 @@
 }
 
 .slider-arrows {
+  z-index: 2;
   position: absolute;
   top: 40px;
   right: 80px;
@@ -140,6 +141,32 @@
 
 .slick-current .dots-box {
   border-top-color: $green;
+}
+
+.header__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.header__arrows {
+  position: absolute;
+  bottom: 20px;
+  left: 210px;
+  z-index: 3;
+}
+
+.animation-line {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: animdash 5s infinite 6s;
+}
+
+@keyframes animdash {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 @import "media";
