@@ -136,6 +136,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -167,6 +168,10 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.surf {
+  padding: 160px 0 210px;
 }
 
 @import "media";

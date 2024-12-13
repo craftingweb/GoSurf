@@ -4141,10 +4141,24 @@ template {
   animation-name: slideOutUp;
 }
 
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background-color: #171919;
+  color: #fff;
 }
 
 li,
@@ -4179,6 +4193,42 @@ a {
   left: 0;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3137254902);
+}
+
+.title span {
+  font-family: "Fira Sans";
+  font-size: 200px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.02);
+  position: relative;
+  display: inline-block;
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+.title h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.title h3::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: 0;
+  width: 80px;
+  height: 1px;
+  background-color: #4af6cd;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0;
 }
 
 .header {
@@ -4319,6 +4369,7 @@ a {
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
+  text-transform: capitalize;
 }
 
 .slick-current .dots-box {
@@ -4356,4 +4407,7 @@ a {
   to {
     stroke-dashoffset: 0;
   }
+}
+.surf {
+  padding: 160px 0 210px;
 }

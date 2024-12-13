@@ -1,7 +1,19 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  background-color: #171919;
+  color: #fff;
 }
 
 li,
@@ -36,4 +48,40 @@ a {
     height: 1px;
     background-color: #ffffff50;
   }
+}
+
+.title {
+  span {
+    font-family: "Fira Sans";
+    font-size: 200px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(#fff, 0.02);
+    position: relative;
+    display: inline-block;
+    transform: translateX(-50px);
+  }
+  h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 5px;
+      right: 0;
+      width: 80px;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0;
 }
