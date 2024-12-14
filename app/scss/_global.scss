@@ -29,7 +29,7 @@ a {
   color: inherit;
 }
 
-.subtitle-left {
+.headline-left {
   color: #fff;
   display: inline-block;
   font-size: 22px;
@@ -84,4 +84,18 @@ a {
 .container {
   max-width: 1600px;
   margin: 0;
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  &__head {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  span {
+    font-weight: 100;
+  }
 }

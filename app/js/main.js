@@ -15,4 +15,9 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
   });
+
+  $(".surf-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  });
 });

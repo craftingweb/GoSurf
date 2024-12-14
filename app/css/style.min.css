@@ -4174,7 +4174,7 @@ a {
   color: inherit;
 }
 
-.subtitle-left {
+.headline-left {
   color: #fff;
   display: inline-block;
   font-size: 22px;
@@ -4185,7 +4185,7 @@ a {
   position: relative;
   padding-left: 100px;
 }
-.subtitle-left::before {
+.headline-left::before {
   content: "";
   top: 50%;
   position: absolute;
@@ -4229,6 +4229,20 @@ a {
 .container {
   max-width: 1600px;
   margin: 0;
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+}
+.subtitle__head {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.subtitle span {
+  font-weight: 100;
 }
 
 .header {
@@ -4410,4 +4424,21 @@ a {
 }
 .surf {
   padding: 160px 0 210px;
+  background-image: url("/img/surf-bg.png");
+  background-repeat: no-repeat;
+  background-position: right 200px;
+}
+
+.surf-subtitle {
+  text-align: right;
+  padding-right: 80px;
+  margin-top: -86px;
+  position: relative;
+}
+
+.surf-box {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
 }
