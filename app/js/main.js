@@ -19,5 +19,9 @@ $(function () {
   $(".surf-slider").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    prevArrow:
+      '<img class="slider-arrows slider-arrows-left" src="/img/arrow-left.svg"></img>',
+    nextArrow:
+      '<img class="slider-arrows slider-arrows-right" src="img/arrow-right.svg"></img>',
   });
 });
