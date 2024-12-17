@@ -6,10 +6,10 @@ $(function () {
       '<img class="slider-arrows slider-arrows-left" src="/img/arrow-left.svg"></img>',
     nextArrow:
       '<img class="slider-arrows slider-arrows-right" src="img/arrow-right.svg"></img>',
-    asNavFor: ".slider-dots",
+    asNavFor: ".slider-dotshead",
   });
 
-  $(".slider-dots").slick({
+  $(".slider-dotshead").slick({
     asNavFor: ".header__slider",
     arrows: false,
     slidesToShow: 4,
@@ -23,5 +23,14 @@ $(function () {
       '<img class="slider-arrows slider-arrows-left" src="/img/arrow-left.svg"></img>',
     nextArrow:
       '<img class="slider-arrows slider-arrows-right" src="img/arrow-right.svg"></img>',
+    asNavFor: ".slider-map",
+  });
+
+  $(".slider-map").slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: ".surf-slider",
+    focusOnSelect: true,
   });
 });
