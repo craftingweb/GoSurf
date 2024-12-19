@@ -4195,6 +4195,27 @@ a {
   background-color: rgba(255, 255, 255, 0.3137254902);
 }
 
+.headline-right {
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.333px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  position: relative;
+  padding-right: 100px;
+}
+.headline-right::before {
+  content: "";
+  top: 50%;
+  position: absolute;
+  width: 80px;
+  right: 0;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3137254902);
+}
+
 .title span {
   font-family: "Fira Sans";
   font-size: 200px;
@@ -4242,6 +4263,19 @@ a {
   text-transform: uppercase;
 }
 .subtitle span {
+  font-weight: 100;
+}
+
+.descr {
+  display: inline-block;
+  padding-left: 5px;
+}
+.descr__head {
+  font-size: 40px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.descr span {
   font-weight: 100;
 }
 
@@ -4709,4 +4743,80 @@ a {
 .slider-dots--8 .slider-dots__content::before {
   left: auto;
   right: 0;
+}
+
+.travel {
+  background-image: url("/img/glass.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.travel-slider__head {
+  background-image: url("/img/travel-bg.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  min-height: 780px;
+}
+.travel-slider__descr {
+  margin-top: -100px;
+  background-image: url("/img/plane.png");
+  min-height: 220px;
+  background-repeat: no-repeat;
+  background-position: right -150px;
+  padding-left: 132px;
+}
+.travel-slider__descr img {
+  padding-left: 25px;
+}
+.travel-slider__subtitle {
+  text-align: right;
+  padding: 132px 80px 0 0;
+}
+.travel-slider__btn {
+  text-align: center;
+}
+.travel-slider__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.travel-slider__info-item {
+  position: relative;
+  min-height: 200px;
+  margin-bottom: 66px;
+}
+.travel-slider__info-subtitle {
+  white-space: nowrap;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.3137254902);
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  height: 0;
+  width: 200px;
+  text-align: right;
+  top: 97px;
+  left: -97px;
+}
+.travel-slider__info-title {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 36px;
+  text-transform: uppercase;
+  padding-left: 40px;
+  width: 242px;
+}
+.travel-slider__info-title span {
+  color: rgba(255, 255, 255, 0.4392156863);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 5.25px;
+  text-transform: uppercase;
 }
