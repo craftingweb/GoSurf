@@ -4280,6 +4280,11 @@ a {
           transform: translateY(-50%);
 }
 
+.surf,
+.travel {
+  padding: 160px 0 120px;
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -4458,7 +4463,6 @@ a {
   }
 }
 .surf {
-  padding: 160px 0 120px;
   background-image: url("/img/surf-bg.png");
   background-repeat: no-repeat;
   background-position: right 200px;
