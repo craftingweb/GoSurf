@@ -4544,3 +4544,61 @@ a {
   right: 0;
   display: none;
 }
+
+.slider-map {
+  max-width: 1200px;
+  min-height: 635px;
+  background-image: url("/img/world-map-dots.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.slider-map .slick-list {
+  min-height: 635px;
+}
+
+.slider-dots {
+  position: relative;
+}
+.slider-dots__circle {
+  width: 24px;
+  height: 24px;
+  background-color: #4af6cd;
+  border-radius: 50%;
+}
+.slider-dots__content {
+  display: none;
+}
+.slider-dots--1 {
+  top: 335px;
+  left: 0;
+}
+.slider-dots--2 {
+  top: 267px;
+  left: 0;
+}
+.slider-dots--3 {
+  top: 345px;
+  left: 25px;
+}
+.slider-dots--4 {
+  top: 470px;
+  left: -25px;
+}
+.slider-dots--5 {
+  top: 230px;
+  left: -65px;
+}
+.slider-dots--6 {
+  top: 550px;
+  left: -120px;
+}
+.slider-dots--7 {
+  top: 375px;
+  left: -95px;
+}
+.slider-dots--8 {
+  top: 470px;
+  left: 20px;
+}
