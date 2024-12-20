@@ -424,8 +424,14 @@
     background-repeat: no-repeat;
     background-position: right -150px;
     padding-left: 132px;
-    img {
-      padding-left: 25px;
+    .descr__head {
+      padding-right: 78px;
+      position: relative;
+      img {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
   }
   &__subtitle {
@@ -465,6 +471,7 @@
       text-transform: uppercase;
       padding-left: 40px;
       width: 242px;
+      position: relative;
       span {
         color: #ffffff70;
         font-size: 14px;
@@ -472,6 +479,9 @@
         line-height: 36px;
         letter-spacing: 5.25px;
         text-transform: uppercase;
+        position: absolute;
+        bottom: -28px;
+        right: 0;
       }
     }
   }

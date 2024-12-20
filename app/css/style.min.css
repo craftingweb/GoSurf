@@ -4319,6 +4319,10 @@ a {
   padding: 160px 0 120px;
 }
 
+.travel {
+  padding-bottom: 265px;
+}
+
 .header {
   position: relative;
   height: 100vh;
@@ -4765,8 +4769,14 @@ a {
   background-position: right -150px;
   padding-left: 132px;
 }
-.travel-slider__descr img {
-  padding-left: 25px;
+.travel-slider__descr .descr__head {
+  padding-right: 78px;
+  position: relative;
+}
+.travel-slider__descr .descr__head img {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .travel-slider__subtitle {
   text-align: right;
@@ -4811,6 +4821,7 @@ a {
   text-transform: uppercase;
   padding-left: 40px;
   width: 242px;
+  position: relative;
 }
 .travel-slider__info-title span {
   color: rgba(255, 255, 255, 0.4392156863);
@@ -4819,4 +4830,7 @@ a {
   line-height: 36px;
   letter-spacing: 5.25px;
   text-transform: uppercase;
+  position: absolute;
+  bottom: -28px;
+  right: 0;
 }
