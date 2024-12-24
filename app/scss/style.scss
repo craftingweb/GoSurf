@@ -483,8 +483,38 @@
         bottom: -28px;
         right: 0;
       }
+      img {
+        position: absolute;
+        right: 37px;
+        bottom: -20px;
+      }
     }
   }
+}
+
+.sleep {
+  background-image: url("/img/frangipani.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.sleep__reviews {
+  padding-right: 78px;
+  position: relative;
+  img {
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 0px;
+  }
+}
+
+.sleep-slider__descr {
+  margin-top: -200px;
+  min-height: 286px;
+  background-repeat: no-repeat;
+  background-position: right 0px;
+  margin-bottom: 100px;
 }
 
 @import "media";
