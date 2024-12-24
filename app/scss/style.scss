@@ -517,4 +517,70 @@
   margin-bottom: 100px;
 }
 
+.shop {
+  background-image: url("/img/shop-bg.png");
+  background-position: center right;
+  background-repeat: no-repeat;
+  &__slider {
+    padding-left: 130px;
+    &-price {
+      img {
+        margin-left: -15px;
+      }
+    }
+    &-inner {
+      display: flex;
+    }
+    &-info {
+      max-width: 480px;
+      margin-right: 40px;
+      width: 100%;
+    }
+    &-btn a span {
+      font-weight: 800;
+    }
+    &-content {
+      padding-left: 70px;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  &__descr {
+    max-width: 340px;
+  }
+  &__extras {
+    padding-left: 150px;
+    &-title {
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+    &-inner {
+      display: flex;
+      gap: 65px;
+    }
+    &-box {
+      text-align: center;
+    }
+    &-name {
+      color: #ffffff50;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-top: 35px;
+      margin-bottom: 10px;
+    }
+    &-price {
+      font-weight: 800;
+    }
+    &-img {
+      display: flex;
+      align-items: center;
+      min-height: 105px;
+      justify-content: center;
+    }
+  }
+}
+
 @import "media";
