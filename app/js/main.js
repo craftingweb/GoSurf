@@ -41,4 +41,8 @@ $(function () {
     nextArrow:
       '<img class="slider-arrows slider-arrows-right" src="img/arrow-right.svg"></img>',
   });
+
+  $(".surfboard-box__circle").on("click", function () {
+    $(this).toggleClass("active");
+  });
 });
