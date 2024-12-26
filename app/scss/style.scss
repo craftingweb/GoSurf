@@ -596,6 +596,22 @@
   &__position-3 {
     left: 52px;
     bottom: 70px;
+    .surfboard-box__content {
+      padding-left: 0;
+      padding-right: 104px;
+      top: -15px;
+      left: -400px;
+      &::before {
+        position: absolute;
+        width: 80px;
+        height: 1px;
+        background-color: #fff;
+        right: 0;
+        left: auto;
+        top: 50%;
+        content: "";
+      }
+    }
   }
   &-box {
     position: absolute;
