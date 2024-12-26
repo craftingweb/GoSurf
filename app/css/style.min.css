@@ -5034,3 +5034,22 @@ a {
   height: 1px;
   background-color: rgba(255, 255, 255, 0.3137254902);
 }
+
+.footer {
+  text-align: center;
+  padding: 200px 0 40px;
+}
+.footer .btn span {
+  padding: 17px 17px 17px;
+}
+.footer .btn span::after {
+  display: none;
+}
+.footer__copyright {
+  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.3137254902);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  text-transform: uppercase;
+}

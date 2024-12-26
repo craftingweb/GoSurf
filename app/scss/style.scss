@@ -668,4 +668,25 @@
   }
 }
 
+.footer {
+  text-align: center;
+  padding: 200px 0 40px;
+  .btn {
+    span {
+      padding: 17px 17px 17px;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &__copyright {
+    padding-top: 30px;
+    color: #ffffff50;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-transform: uppercase;
+  }
+}
+
 @import "media";
