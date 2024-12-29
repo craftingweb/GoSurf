@@ -141,4 +141,19 @@
   .dots-box {
     width: 130px;
   }
+  .slider-dotshead {
+    left: 20px;
+  }
+}
+
+@media (max-width: 960px) {
+  .slider-dotshead {
+    display: none;
+  }
+  .header__location {
+    margin-top: 45px;
+  }
+  .header__date {
+    padding-left: 51px;
+  }
 }
