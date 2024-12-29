@@ -69,6 +69,20 @@
   }
 }
 
+.menu-btn {
+  display: none;
+  width: 40px;
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  z-index: 20;
+  &__line {
+    margin-bottom: 5px;
+    height: 5px;
+    background-color: $green;
+  }
+}
+
 .slider-item__info {
   position: absolute;
   right: 80px;
