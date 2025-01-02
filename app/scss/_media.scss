@@ -156,4 +156,35 @@
   .header__date {
     padding-left: 51px;
   }
+  .surf-box__inner {
+    min-height: 650px;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-map {
+    background-image: none;
+    min-height: 0;
+    .slick-list {
+      min-height: 0;
+    }
+  }
+  .slider-dots__circle {
+    display: none;
+  }
+  .surf {
+    padding: 60px 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    display: none;
+  }
+  .headline-left {
+    white-space: nowrap;
+  }
+  .surf-slider .slider-arrows {
+    top: 25px;
+  }
 }
