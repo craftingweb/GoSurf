@@ -4154,6 +4154,8 @@ html {
 }
 
 body {
+  min-height: 375px;
+  overflow-x: hidden;
   font-family: "Fira Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -4216,7 +4218,7 @@ a {
   background-color: rgba(255, 255, 255, 0.3137254902);
 }
 
-.title span {
+.title div {
   font-family: "Fira Sans";
   font-size: 200px;
   font-style: normal;
@@ -4228,6 +4230,9 @@ a {
   -webkit-transform: translateX(-50px);
       -ms-transform: translateX(-50px);
           transform: translateX(-50px);
+}
+.title span {
+  display: inline-block;
 }
 .title h3 {
   margin: 0;
@@ -4643,6 +4648,7 @@ a {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 1;
 }
 .slider-dots__content::before {
   content: "";
